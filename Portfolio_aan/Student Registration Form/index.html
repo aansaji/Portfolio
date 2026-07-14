@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form id="registrationForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter Full Name">
+        <small></small>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter Email">
+        <small></small>
+
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="10-digit Mobile Number">
+        <small></small>
+
+        <label>Age</label>
+        <input type="number" id="age">
+        <small></small>
+
+        <label>Date of Birth</label>
+        <input type="date" id="dob">
+        <small></small>
+
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+        <small id="genderError"></small>
+
+        <label>Course</label>
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>BCA</option>
+            <option>BSc</option>
+            <option>BCom</option>
+            <option>BBA</option>
+            <option>MCA</option>
+        </select>
+        <small></small>
+
+        <label>Address</label>
+        <textarea id="address" rows="4"></textarea>
+        <small></small>
+
+        <label>Password</label>
+        <input type="password" id="password">
+        <small></small>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword">
+        <small></small>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

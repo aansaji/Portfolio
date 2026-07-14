@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Student Registration Form</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>Student Registration Form</h1>
+<form>
+<fieldset><legend>Personal Details</legend>
+<label>First Name*</label><input type="text" required><br><br>
+<label>Middle Name</label><input type="text"><br><br>
+<label>Last Name*</label><input type="text" required><br><br>
+<label>Date of Birth*</label><input type="date" required><br><br>
+<label>Age*</label><input type="number" min="1" max="100" required><br><br>
+<label>Gender*</label><select required><option value="">Select</option><option>Male</option><option>Female</option><option>Transgender</option><option>Non-binary</option><option>Genderqueer</option><option>Agender</option><option>Prefer not to say</option><option>Other</option></select><br><br>
+<label>Blood Group*</label><select required><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select><br><br>
+<label>Nationality</label><input list="nat"><datalist id="nat"><option>Indian</option><option>American</option><option>Canadian</option><option>Australian</option><option>British</option></datalist><br><br>
+<label>Religion</label><input type="text"><br><br>
+<label>Caste/Category</label><input type="text"><br><br>
+<label>Student Photo</label><input type="file" accept="image/*"><br><br>
+<label>Signature</label><input type="file" accept="image/*">
+</fieldset>
+<fieldset><legend>Contact Details</legend>
+<label>Mobile*</label><input type="tel" pattern="[0-9]{10}" required><br><br>
+<label>Alternative Mobile</label><input type="tel" pattern="[0-9]{10}"><br><br>
+<label>Student Email*</label><input type="email" required><br><br>
+<label>Parent Email</label><input type="email"><br><br>
+<label>Current Address</label><textarea></textarea><br><br>
+<label>Permanent Address</label><textarea></textarea><br><br>
+<label>City</label><input list="city"><datalist id="city"><option>Bengaluru</option><option>Mysuru</option><option>Mangaluru</option></datalist><br><br>
+<label>District</label><input list="district"><datalist id="district"><option>Bengaluru Urban</option><option>Mysuru</option></datalist><br><br>
+<label>State</label><input list="state"><datalist id="state"><option>Karnataka</option><option>Kerala</option><option>Tamil Nadu</option></datalist><br><br>
+<label>Country</label><input list="country"><datalist id="country"><option>India</option><option>USA</option></datalist><br><br>
+<label>PIN Code</label><input type="text" pattern="[0-9]{6}">
+</fieldset>
+<fieldset><legend>Guardian Details</legend>
+<label>Guardian Name</label><input type="text" pattern="[A-Z ]+" title="Use CAPITAL letters"><br><br>
+<label>Occupation</label><input type="text"><br><br>
+<label>Qualification</label><input type="text"><br><br>
+<label>Guardian Mobile</label><input type="tel" pattern="[0-9]{10}"><br><br>
+<label>Guardian Email</label><input type="email">
+</fieldset>
+<fieldset><legend>Emergency Contact</legend>
+<label>Name</label><input type="text"><br><br>
+<label>Relationship</label><select><option>Father</option><option>Mother</option><option>Brother</option><option>Sister</option><option>Guardian</option><option>Uncle</option><option>Aunt</option><option>Friend</option><option>Spouse</option><option>Other</option></select><br><br>
+<label>Phone</label><input type="tel" pattern="[0-9]{10}"><br><br>
+<label>Alternative Phone</label><input type="tel" pattern="[0-9]{10}">
+</fieldset>
+<fieldset><legend>Declaration</legend>
+<input type="checkbox" required> I hereby declare that the information provided is true.<br><br>
+<label>Student Signature</label><input type="file" accept="image/*"><br><br>
+<label>Parent Signature</label><input type="file" accept="image/*"><br><br>
+<label>Date</label><input type="date"><br><br>
+<label>Place</label><input type="text">
+</fieldset><br>
+<input type="submit" value="Submit Registration">
+<input type="reset" value="Reset">
+</form></body></html>
